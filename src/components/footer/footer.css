@@ -161,7 +161,7 @@ li {
 }
 .section {
     min-height: 100px;
-    border-bottom: 1px solid #310050;
+    border-bottom: 2px solid #310050;
     flex-direction: row;
     justify-content: center;
     align-items: stretch;

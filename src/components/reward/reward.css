@@ -4,10 +4,10 @@
     display: flex;
     padding-top: 90px;
     justify-content: space-evenly;
-    background-image: url('https://uploads-ssl.webflow.com/62fac9a72363186872484cff/630c2594b123fbf86eca9ba7_int-banner-bg.jpeg');
+    background-image: url(/static/media/backTool1.cec1c969.png);
     background-size: cover;
     background-repeat: no-repeat;
-    border-bottom: 1px solid #310050;
+    border-bottom: 2px solid #310050;
 }
 .reward-frame{
     min-width: 750px;

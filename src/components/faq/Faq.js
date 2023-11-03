@@ -49,7 +49,7 @@ const Faq = () => {
               <div 
                 className={styles.box}
                 style={{ 
-                  backgroundColor: hoveredItem === index ? '#F05A28' : '',
+                  backgroundColor: hoveredItem === index ? '#70FFCB' : '',
                   color: hoveredItem === index ? '#fff' : '',
                 }}
                 onMouseEnter={() => handleHover(index)}

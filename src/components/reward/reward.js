@@ -1,10 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './reward.css'
-import Footer from "../footer/footer";
 
 const Reward = () => {
-  
-  const [firstName, setFirstName] = useState("");
   
   
   return (

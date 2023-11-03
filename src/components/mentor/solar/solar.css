@@ -1,9 +1,15 @@
-.mentors{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.mentors {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(/static/media/backTool1.cec1c969.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 2px solid #310050;
+  padding-bottom: 200px;
 }
 
 .main-container {
@@ -12,10 +18,10 @@
   align-items: center;
   -webkit-align-items: center;
 }
-.main {
+.div-main {
   margin: 0px auto;
-  width: 780px;
-  height: 780px;
+  width: 650px;
+  height: 650px;
   position: relative;
 }
 .big-circle {
@@ -34,9 +40,9 @@
   -webkit-animation: Rotate 20s linear infinite;
 }
 .icon-block {
-    width: 213px;
-    position: absolute;
-    height: 213px;
+  width: 213px;
+  position: absolute;
+  height: 213px;
   border-radius: 50%;
   display: flex;
   display: -webkit-flex;
@@ -45,13 +51,13 @@
   justify-content: center;
   -webkit-justify-content: center;
   -webkit-background-image: linear-gradient(180deg, #4967e6 0%, #627bf4 100%);
-  box-shadow: 0 2px 4px 0 #FFFFFF;
-  -webkit-box-shadow: 0 2px 4px 0 #FFFFFF;
+  box-shadow: 0 2px 4px 0 #ffffff;
+  -webkit-box-shadow: 0 2px 4px 0 #ffffff;
 }
 .icon-block1 {
-    width: 213px;
-    position: absolute;
-    height: 213px;
+  width: 213px;
+  position: absolute;
+  height: 213px;
   border-radius: 50%;
   display: flex;
   display: -webkit-flex;
@@ -60,8 +66,8 @@
   justify-content: center;
   -webkit-justify-content: center;
   -webkit-background-image: linear-gradient(180deg, #4967e6 0%, #627bf4 100%);
-  box-shadow: 0 2px 4px 0 #FFFFFF;
-  -webkit-box-shadow: 0 2px 4px 0 #FFFFFF;
+  box-shadow: 0 2px 4px 0 #ffffff;
+  -webkit-box-shadow: 0 2px 4px 0 #ffffff;
 }
 .icon-block img {
   margin: 0px auto;
@@ -70,22 +76,22 @@
   -webkit-animation: Rotate-reverse 20s linear infinite;
 }
 .icon-block1 img {
-    margin: 0px auto;
-    width: 86%;
-    animation: Rotate-reverse 20s linear infinite;
-    -webkit-animation: Rotate-reverse 20s linear infinite;
-  }
+  margin: 0px auto;
+  width: 86%;
+  animation: Rotate-reverse 20s linear infinite;
+  -webkit-animation: Rotate-reverse 20s linear infinite;
+}
 .icon-block {
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 50%);
   -webkit-transform: translate(-50%, 50%);
 }
-.icon-block1{
-    left: 50%;
-    transform: translate(-50%, 50%);
-    -webkit-transform: translate(-50%, 50%);
-    bottom: 100%;
+.icon-block1 {
+  left: 50%;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+  bottom: 100%;
 }
 /* circle content */
 .circle {
@@ -107,31 +113,63 @@
 }
 /* center logo */
 .center-logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 22vw;
-    background: -webkit-linear-gradient(-86deg, #F05A28 5%, #D91C5C 53%, #A922FF 91%);
-    -webkit-transform: translate(-50%, -50%);
-    height: 22vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 22vw;
+  background: -webkit-linear-gradient(
+    -86deg,
+    #f05a28 5%,
+    #d91c5c 53%,
+    #a922ff 91%
+  );
+  -webkit-transform: translate(-50%, -50%);
+  height: 22vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
 .center-logo img {
   max-width: 200px;
   width: 80%;
 }
+.mentorsTitle h1{
+  background: #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 5px transparent;
+  color: #18001d;
+  text-transform: uppercase;
+  margin-top: -10px;
+  padding-top: 10px;
+  font-size: 100px;
+  line-height: 90%;
+  position: relative;
+  z-index: 1;
+  margin: 70px 0px 180px 0px;
+  text-align: center;
+}
 .center-logo:hover {
-    background-image: linear-gradient(rgba(169,34,255,.93),rgba(169,34,255,.93)),url(https://uploads-ssl.webflow.com/62fac9a72363186872484cff/62faca896d1822fa28818962_static-bg.gif);
+  background-image: linear-gradient(
+    rgba(41, 169, 189, 0.96),
+    rgba(106, 33, 151, 0.96)
+    ),
+    url(https://uploads-ssl.webflow.com/62fac9a72363186872484cff/62faca896d1822fa28818962_static-bg.gif);
 }
-.icon-block:hover{
-    background-image: linear-gradient(rgba(116, 26, 172, 0.541),rgba(106, 33, 151, 0.699)),url(https://uploads-ssl.webflow.com/62fac9a72363186872484cff/62faca896d1822fa28818962_static-bg.gif);
+.icon-block:hover {
+  background-image: linear-gradient(
+    rgba(41, 169, 189, 0.96),
+      rgba(106, 33, 151, 0.96)
+    ),
+    url(https://uploads-ssl.webflow.com/62fac9a72363186872484cff/62faca896d1822fa28818962_static-bg.gif);
 }
-.icon-block1:hover{
-    background-image: linear-gradient(rgba(169,34,255,.93),rgba(169,34,255,.93)),url(https://uploads-ssl.webflow.com/62fac9a72363186872484cff/62faca896d1822fa28818962_static-bg.gif);
+.icon-block1:hover {
+  background-image: linear-gradient(
+    rgba(41, 169, 189, 0.96),
+    rgba(106, 33, 151, 0.96)
+    ),
+    url(https://uploads-ssl.webflow.com/62fac9a72363186872484cff/62faca896d1822fa28818962_static-bg.gif);
 }
 /* keyframe animation */
 
@@ -207,19 +245,17 @@
   }
 }
 
-@media screen and (max-width: 1050px){
-.main{
+@media screen and (max-width: 1050px) {
+  .main {
     width: 45vw;
     height: 45vw;
-}
-.icon-block{
+  }
+  .icon-block {
     width: 12vw;
     height: 12vw;
-}
-.icon-block1{
+  }
+  .icon-block1 {
     width: 12vw;
     height: 12vw;
+  }
 }
-}
-
-

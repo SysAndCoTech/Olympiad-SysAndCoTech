@@ -34,37 +34,21 @@ export const Footer = () => {
               </div>
               <div id="w-node-b588fea7-e743-38de-5953-b161fd0aed88-fd0aed6b" className="footer-col footer-mid-col">
                 <nav className="footer-navigation-box">
-                  <h4>Navigation</h4>
+                  <h4>Бидэнтэй холбогдох</h4>
                   <ul role="list" className="footer-list w-list-unstyled">
                     <li className="footer-li">
                     <a href="#" className="footer-nav-link w-inline-block">
-                        <div className="fl-text-block">Home</div>
+                        <div className="fl-text-block">Facebook хуудас</div>
                       </a>
                     </li>
                     <li className="footer-li">
                       <a href="#" className="footer-nav-link w-inline-block">
-                        <div className="fl-text-block">Services</div>
+                        <div className="fl-text-block">Холбогдох утас</div>
                       </a>
                     </li>
                     <li className="footer-li">
                       <a href="#" className="footer-nav-link w-inline-block">
-                        <div className="npm start
-                        nnpmmm">Portfolio</div>
-                      </a>
-                    </li>
-                    <li className="footer-li">
-                      <a href="#" className="footer-nav-link w-inline-block">
-                        <div className="fl-text-block">About</div>
-                      </a>
-                    </li>
-                    <li className="footer-li">
-                      <a href="#" className="footer-nav-link w-inline-block">
-                        <div className="fl-text-block">Industries</div>
-                      </a>
-                    </li>
-                    <li className="footer-li">
-                      <a href="#" className="footer-nav-link w-inline-block">
-                        <div className="fl-text-block">Blog</div>
+                        <div className="fl-text-block">Хаяг байршил</div>
                       </a>
                     </li>
                   </ul>
@@ -72,27 +56,17 @@ export const Footer = () => {
               </div>
               <div id="w-node-b588fea7-e743-38de-5953-b161fd0aeda1-fd0aed6b" className="footer-col footer-mid-col">
                 <nav className="services-nav-box portfolio-nav-box">
-                  <h4>Services</h4>
+                  <h4>Мэдээлэл</h4>
                   <div className="w-dyn-list">
                     <div role="list" className="footer-list w-dyn-items">
                       <div role="listitem" className="footer-link-item w-dyn-item">
                         <a href="#" className="footer-nav-link fnl w-inline-block">
-                          <div className="fl-text-block">Web Development</div>
+                          <div className="fl-text-block">Үйл ажиллагаа</div>
                         </a>
                       </div>
                       <div role="listitem" className="footer-link-item w-dyn-item">
                         <a href="#" className="footer-nav-link fnl w-inline-block">
-                          <div className="fl-text-block">UI Design</div>
-                        </a>
-                      </div>
-                      <div role="listitem" className="footer-link-item w-dyn-item">
-                        <a href="#" className="footer-nav-link fnl w-inline-block">
-                          <div className="fl-text-block">Marketing</div>
-                        </a>
-                      </div>
-                      <div role="listitem" className="footer-link-item w-dyn-item">
-                        <a href="#" className="footer-nav-link fnl w-inline-block">
-                          <div className="fl-text-block">Graphic Design</div>
+                          <div className="fl-text-block">Түгээмэл асуулт хариулт</div>
                         </a>
                       </div>
                     </div>
@@ -105,11 +79,11 @@ export const Footer = () => {
               </div>
               <div id="w-node-b588fea7-e743-38de-5953-b161fd0aedcb-fd0aed6b" className="footer-social-block">
                 <p className="copyright">Follow Us</p>
-                <div className="footer-social-box"><a href="https://www.facebook.com/SysAndCoTech" target="_blank" className="social-link w-inline-block"><BsFacebook className="phone-icon"/></a>
-                  <a href="https://www.instagram.com/syscotechclub_/" target="_blank" className="social-link w-inline-block"><BsInstagram className="phone-icon"/></a>
+                <div className="footer-social-box"><a href="https://www.facebook.com/SysAndCoTech"  className="social-link w-inline-block"><BsFacebook className="phone-icon"/></a>
+                  <a href="https://www.instagram.com/syscotechclub_/"  className="social-link w-inline-block"><BsInstagram className="phone-icon"/></a>
                   <a href="https://www.youtube.com/@syscotechclub6784" className="social-link w-inline-block"><AiOutlineYoutube className="phone-icon"/></a></div>
               </div>
-              <a id="w-node-b588fea7-e743-38de-5953-b161fd0aedd7-fd0aed6b" href="https://syscotech.club/" target="_blank" className="madeby w-inline-block">
+              <a id="w-node-b588fea7-e743-38de-5953-b161fd0aedd7-fd0aed6b" href="https://syscotech.club/"  className="madeby w-inline-block">
                 <div className="copyright">Made By ❤️ Sys&CoTech</div>
               </a>
             </div>

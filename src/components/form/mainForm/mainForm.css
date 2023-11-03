@@ -39,12 +39,13 @@
   gap: 80px;
 }
 .contentFrame{
+  margin-bottom: 80px;
   width: 100vw;
   height: 100vh;
-  background-image: url('../../../img/backTool2.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-bottom: 1px solid #310050;
+  background-image: url(/static/media/backTool1.cec1c969.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  border-bottom: 2px solid #310050;
 }
 .contentSection {
   margin-left: auto;
@@ -53,12 +54,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center; 
-    /* padding: 20px;
-    display: flex;
-    background-image: url('../../../img/backTool1.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-bottom: 1px solid #310050; */
 }
 
 .formDiv{
@@ -265,9 +260,6 @@
   }
 }
 @media screen and (max-width: 1660px){
-  .contentFrame{
-    background-size: contain;
-  }
   .contentFrame{
     height: auto;
   }

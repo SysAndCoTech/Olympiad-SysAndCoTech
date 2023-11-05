@@ -55,7 +55,7 @@ export const Footer = () => {
                 </nav>
               </div>
               <div id="w-node-b588fea7-e743-38de-5953-b161fd0aeda1-fd0aed6b" className="footer-col footer-mid-col">
-                <nav className="services-nav-box portfolio-nav-box">
+                <nav className="footer-navigation-box">
                   <h4>Мэдээлэл</h4>
                   <div className="w-dyn-list">
                     <div role="list" className="footer-list w-dyn-items">

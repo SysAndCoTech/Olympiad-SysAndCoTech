@@ -1,10 +1,9 @@
 .reward{
-    width: 100vw;
     height: 750px;
     display: flex;
     padding-top: 90px;
     justify-content: space-evenly;
-    background-image: url(/static/media/backTool1.cec1c969.png);
+    background-image: url('../../img/backTool1.png');
     background-size: cover;
     background-repeat: no-repeat;
     border-bottom: 2px solid #310050;

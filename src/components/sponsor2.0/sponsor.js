@@ -1,12 +1,14 @@
-import React from "react";
-import "./solar.css";
-import fibo from '../../../img/fibo.png'
-import nasha from '../../../img/NashaTech_Logo-10.png'
-import callpro from '../../../img/callPro.png'
-import sponser from '../../../img/sponsers1.png'
+import React from 'react'
+import "./sponsor.css";
+import fibo from '../../img/fibo.png'
+import nasha from '../../img/NashaTech_Logo-10.png'
+import callpro from '../../img/callPro.png'
+import sponser from '../../img/sponsers1.png'
+import { Swiper } from 'swiper';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { SwiperSlide } from 'swiper/react';
 
-function Solar() {
-
+function Sponsor() {
   return (
     <div className="mentors" id='sponser'>
       <div className="mentorsTitle">
@@ -34,7 +36,7 @@ function Solar() {
           </div>
       </section>
     </div>
-  );
+  )
 }
 
-export default Solar;
+export default Sponsor

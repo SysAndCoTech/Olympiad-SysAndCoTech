@@ -1,37 +1,15 @@
 import React from "react";
 import "./slider.css";
+import {images} from "../../../data/sliderData";
 
 const Slider = (props) => {
-  const images = [
-    "callPro.png",
-    "fibo.png",
-    "nashaTech.png",
-    "callPro.png",
-    "fibo.png",
-    "nashaTech.png",
-    "callPro.png",
-    "fibo.png",
-    "nashaTech.png",
-    "callPro.png",
-    "fibo.png",
-    "nashaTech.png",
-    "callPro.png",
-    "fibo.png",
-    "nashaTech.png",
-    "callPro.png",
-    "fibo.png",
-    "nashaTech.png",
-    "callPro.png",
-    "fibo.png",
-    "nashaTech.png",
-  ];
 
   return (
     <div className="slider">
       <div className="slide-track">
         {images.map((image, index) => (
           <div className="slide" key={index}>
-            <img src={image} height="50" width="100" alt="" />
+            <img src={image.text} height="50" width="100" alt="" />
           </div>
         ))}
       </div>

@@ -1,5 +1,4 @@
 .timer-frame{
-    width: 100vw;
     height: 60vh;
     display: flex;
     align-items: center;
@@ -9,7 +8,17 @@
     background-repeat: no-repeat;
     border-bottom: 2px solid #310050;
 }
-
+.finished-h1{
+    font-size: 16px;
+    font-size: 44px;
+    margin: 20px;
+}
+.finished-box{
+    width: auto;
+    height: auto;
+    background-color: rgb(64, 69, 73);
+    border-radius: 20px;
+}
 .timer-frame-time{
     min-width: 700px;
     display: flex;

@@ -2,91 +2,42 @@ import './App.css';
 import MainForm from './components/form/mainForm/mainForm';
 import Header from './components/header/Header';
 import Pay from './components/form/pay/pay';
-import React, {useState, useEffect} from "react";
-import {gsap, CSSPlugin, Expo} from "gsap";
+import React from "react";
 import Title from './components/homeTitle/title';
 import Timer from './components/timer/timer';
 import Footer from './components/footer/footer';
 import Reward from './components/reward/reward';
 import Faq from './components/faq/Faq';
-import Solar from './components/mentor/solar/solar';
-gsap.registerPlugin(CSSPlugin);
+// import Solar from './components/mentor/solar/solar';
+import Mentors from './components/mentor/mentors';
+import { Route, Routes } from 'react-router';
+import Sponsor from './components/sponsor2.0/sponsor';
 
 function App() {
-  const [counter, setCounter] = useState(0);
   
-  
-  useEffect(() => {
-    const count = setInterval(() => {
-      setCounter((counter) =>
-        counter < 100
-          ? counter + 1
-          : (clearInterval(count), setCounter(100), reveal())
-      );
-    }, 10);
-  }, []);
-  
-  const reveal = () => {
-    const t1 = gsap.timeline({
-      onComplete: () => {
-        console.log("completed");
-      },
-    });
-    t1.to(".follow", {
-        width: "100%",
-        ease: Expo.easeInOut,
-        duration: 1.2,
-        delay: 0.7,
-      })
-      .to(".hide", {opacity: 0, duration: 0.3})
-      .to(".hide", {display: "none", duration: 0.3})
-      .to(".follow", {
-        height: "100%",
-        ease: Expo.easeInOut,
-        duration: 0.7,
-        delay: 0.5,
-      })
-      .to(".content", {width: "100%", ease: Expo.easeInOut, duration: 0.7})
-      .to(".title-lines", {display: "block", duration: 0.1})
-      .to(".title-lines", {
-        opacity: 1,
-        stagger: 0.15,
-        ease: Expo.easeInOut,
-        duration: 0.6,
-      });
-  };
   const time = new Date();
-  time.setSeconds(time.getSeconds() + 604800);
+  time.setSeconds(time.getSeconds() + 8);
   
   return (
-    <div className="AppContainer">
-      <div className="Loading">
-        <div className="follow"></div>
-        <div
-          className="hide"
-          id="progress-bar"
-          style={{width: counter + "%"}}
-        ></div>
-        <div id="count" className="hide">
-          {counter}%
-        </div>
-      </div>
-      
-      <div className="content">
         <div className='App'>
-          <Header/>
-          <Title/>
-          <Timer expiryTimestamp={time}/>
-          <Reward/>
-          <Solar/>
-          <MainForm/>
-          <Pay/>
-          <Faq/>
-          <Footer/>
+          <Routes>
+              <Route exact path="/" element={
+                <>
+                  <Header/>
+                  <Title />
+                  <Timer expiryTimestamp={time}/>
+                  <Reward/>
+                  {/* <Solar/> */}
+                  <Sponsor/>
+                  <MainForm/>
+                  <Pay/>
+                  <Faq/>
+                  <Footer/>
+                </>
+              }/>
+              <Route path="sponser" element={<Mentors />} />
+          </Routes>
         </div>
-      </div>
-    
-    </div>
   
   );
 }

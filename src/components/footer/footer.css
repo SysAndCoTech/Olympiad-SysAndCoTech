@@ -718,6 +718,10 @@ li {
         padding-top: 50px
     }
 
+    .section.footer-section{
+        padding-left: 0;
+        padding-right: 0;
+    }
     .footer-grid {
         grid-column-gap: 0px;
         grid-row-gap: 0px;
@@ -747,6 +751,7 @@ li {
         margin-bottom: 0
     }
     .copyright {
+        text-align: center;
         margin-top: 15px
     }
     .footer-social-block {

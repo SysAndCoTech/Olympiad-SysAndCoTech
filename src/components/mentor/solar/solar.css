@@ -1,15 +1,14 @@
 .mentors {
-  width: 100vw;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url(/static/media/backTool1.cec1c969.png);
+  background-image: url('../../../img/backTool1.png');
   background-size: cover;
   background-repeat: no-repeat;
   border-bottom: 2px solid #310050;
-  padding-bottom: 200px;
+  padding-bottom: 10vw;
 }
 
 .main-container {
@@ -20,8 +19,8 @@
 }
 .div-main {
   margin: 0px auto;
-  width: 650px;
-  height: 650px;
+  width: 40vw;
+  height: 40vw;
   position: relative;
 }
 .big-circle {
@@ -68,6 +67,16 @@
   -webkit-background-image: linear-gradient(180deg, #4967e6 0%, #627bf4 100%);
   box-shadow: 0 2px 4px 0 #ffffff;
   -webkit-box-shadow: 0 2px 4px 0 #ffffff;
+}
+.icon-block1 a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-block a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .icon-block img {
   margin: 0px auto;
@@ -150,6 +159,10 @@
   margin: 70px 0px 180px 0px;
   text-align: center;
 }
+.mentorsTitle img{
+  width: 50%;
+}
+
 .center-logo:hover {
   background-image: linear-gradient(
     rgba(41, 169, 189, 0.96),
@@ -244,7 +257,19 @@
     -webkit-transform: rotate(-405deg);
   }
 }
-
+@media screen and (max-width: 1350px) {
+  
+  .icon-block1 {
+    width: 180px;
+    position: absolute;
+    height: 180px;
+  }
+  .icon-block {
+    width: 180px;
+    position: absolute;
+    height: 180px;
+  }
+}
 @media screen and (max-width: 1050px) {
   .main {
     width: 45vw;
@@ -259,3 +284,4 @@
     height: 12vw;
   }
 }
+

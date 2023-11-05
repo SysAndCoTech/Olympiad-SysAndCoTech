@@ -1,8 +1,6 @@
 
 .titleback{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(24,0,29,0) 62%,#18001d 73%),url(/static/media/Background.81f387e1.png);
+    background-image: linear-gradient(rgba(24,0,29,0) 62%,#18001d 73%),url('../../img/Background.png');
     z-index: 1;
     background-position: 0 0,50% 0;
     background-repeat: repeat,no-repeat;
@@ -12,10 +10,12 @@
     align-items: stretch;
     display: flex;
     justify-content: flex-start;
+    margin-top: 100px;
+}
+.titleback-main img {
+    width: 50%;
 }
 .titleback-box{
-    width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,7 +44,6 @@
     gap: 8px;
     font-size: 20px;
 }
-
 @media screen and (max-width: 1150px){
     .titleback-main {
         flex-direction: column;
@@ -59,5 +58,17 @@
     }
     .large-h2-span{
         width: 80%;
+    }
+    .large-h2-span h2{
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .large-h2-span h2{
+        font-size: 11px;
+    }
+    .titleback-section img{
+        display: none;
     }
 }

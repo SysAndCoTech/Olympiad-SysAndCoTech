@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './time.css';
 import { useTimer } from 'react-timer-hook';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
+import { Link } from 'react-scroll';
 
 function Timer({expiryTimestamp}) {
-
+const [finished, setFinished] = useState(false);
   const {
     seconds,
     minutes,
@@ -20,15 +21,26 @@ function Timer({expiryTimestamp}) {
   const h = Array.from(hourTime.toString()).map(Number);
   const d = Array.from(dayTime.toString()).map(Number);
 
-console.log(dayTime, hourTime, minuteTime, secondTime)
+
+useEffect(() => {
+  if (days == '0' && hours == '0' && minutes == '0' && seconds == '0') {
+    setFinished(true);
+  }
+  console.log(days, hours, minutes, seconds);
+}, [secondTime]);
 
   return (
     <div className='timer-frame'>
       <div className='timer-frame-time'>
         <div className='timer-h1'>
-            <h1 className='timer-h1-span'>"Dev Hackathon Student 2022"</h1>
+            <h1 className='timer-h1-span'>"DEV COMP Olympad"</h1>
             <h1 className='timer-h1-span'>бүртгэл хаагдахад</h1>            
         </div>
+        {finished ? 
+        <div className='finished-box'>
+          <h1 className='finished-h1'>Бүртгэл хаагдсан байна.</h1>
+        </div> 
+        : 
         <div className='time'>
           <div className='timer-box'>
             <div className='clock-box'>
@@ -58,13 +70,8 @@ console.log(dayTime, hourTime, minuteTime, secondTime)
             </div>
             <span className='timer-span'>seconds</span>
           </div>
-          {/* <div style={{textAlign: 'center'}}>
-            <div style={{fontSize: '100px'}}>
-              <span>{days}</span>:<span>{hours}</span>:<span>{minutes}</span>:<span>{seconds}</span>
-            </div>
-            <p>{isRunning ? 'Running' : 'Not running'}</p>
-          </div> */}
         </div>
+        }
       </div>
       <div className='organizer'>
         <h1 className='organizerTitle'>Зохион байгуулагч</h1>
@@ -72,9 +79,15 @@ console.log(dayTime, hourTime, minuteTime, secondTime)
             <li>Sys&Cotech club</li>
             <li>Nasha tech</li>
             <li>Call pro</li>
-            <li>ITC group</li>
-            <li>Khan bank</li>
-            <button className='organizerButton' type="">Мэдээлэл авах<BsFillArrowRightCircleFill/></button>
+            <Link to="sponser" 
+              spy={true} 
+              smooth={true} 
+              offset={50} 
+              duration={500} 
+              className='organizerButton'>
+              Мэдээлэл авах
+              <BsFillArrowRightCircleFill/>
+            </Link>
         </ul>
       </div>
     </div>

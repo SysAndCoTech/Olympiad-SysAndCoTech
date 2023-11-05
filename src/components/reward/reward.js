@@ -5,7 +5,7 @@ const Reward = () => {
   
   
   return (
-    <>
+    <div id='reward'>
       <div className='reward'>
         <div className='reward-frame'>
             <h1 className='reward_h'>"Шагналын Сан"</h1>
@@ -28,7 +28,7 @@ const Reward = () => {
             </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 export default Reward;

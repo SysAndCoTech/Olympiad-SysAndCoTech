@@ -143,6 +143,11 @@
         font-size: 65px;
     }
 }
+@media screen and (max-width: 1200px) {
+    .organizer{
+        width: auto;
+    }
+}
 @media screen and (max-width: 991px){
     .timer-frame{
         flex-direction: column;
@@ -163,7 +168,12 @@
         font-size: 2vw;
     }
     .organizer {
-        padding-left: 40px;
+        padding-top: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     }
 }
 @media screen and (max-width: 691px){

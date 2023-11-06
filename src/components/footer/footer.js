@@ -32,28 +32,6 @@ export const Footer = () => {
                   {/* <a href="/pitch-a-project" className="button w-button">Pitch A Project</a> */}
                   </div>
               </div>
-              <div id="w-node-b588fea7-e743-38de-5953-b161fd0aed88-fd0aed6b" className="footer-col footer-mid-col">
-                <nav className="footer-navigation-box">
-                  <h4>Бидэнтэй холбогдох</h4>
-                  <ul role="list" className="footer-list w-list-unstyled">
-                    <li className="footer-li">
-                    <a href="#" className="footer-nav-link w-inline-block">
-                        <div className="fl-text-block">Facebook хуудас</div>
-                      </a>
-                    </li>
-                    <li className="footer-li">
-                      <a href="#" className="footer-nav-link w-inline-block">
-                        <div className="fl-text-block">Холбогдох утас</div>
-                      </a>
-                    </li>
-                    <li className="footer-li">
-                      <a href="#" className="footer-nav-link w-inline-block">
-                        <div className="fl-text-block">Хаяг байршил</div>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
               <div id="w-node-b588fea7-e743-38de-5953-b161fd0aeda1-fd0aed6b" className="footer-col footer-mid-col">
                 <nav className="footer-navigation-box">
                   <h4>Мэдээлэл</h4>
@@ -73,17 +51,13 @@ export const Footer = () => {
                   </div>
                 </nav>
               </div>
-              <div id="w-node-b588fea7-e743-38de-5953-b161fd0aedc2-fd0aed6b" className="footer-credit-box">
-                {/* <p className="footer-credit-p"><a href="#" className="link">Sitemap</a> | <a href="#" className="link">Contact Us</a></p> */}
-                <p className="copyright">Copyright Sys&CoTech 2023</p>
-              </div>
               <div id="w-node-b588fea7-e743-38de-5953-b161fd0aedcb-fd0aed6b" className="footer-social-block">
                 <p className="copyright">Follow Us</p>
                 <div className="footer-social-box"><a href="https://www.facebook.com/SysAndCoTech"  className="social-link w-inline-block"><BsFacebook className="phone-icon"/></a>
-                  <a href="https://www.instagram.com/syscotechclub_/"  className="social-link w-inline-block"><BsInstagram className="phone-icon"/></a>
-                  <a href="https://www.youtube.com/@syscotechclub6784" className="social-link w-inline-block"><AiOutlineYoutube className="phone-icon"/></a></div>
+                  <a href="https://www.instagram.com/syscotechclub_/"  target="_blank" className="social-link w-inline-block"><BsInstagram className="phone-icon"/></a>
+                  <a href="https://www.youtube.com/@syscotechclub6784" target="_blank" className="social-link w-inline-block"><AiOutlineYoutube className="phone-icon"/></a></div>
               </div>
-              <a id="w-node-b588fea7-e743-38de-5953-b161fd0aedd7-fd0aed6b" href="https://syscotech.club/"  className="madeby w-inline-block">
+              <a id="w-node-b588fea7-e743-38de-5953-b161fd0aedd7-fd0aed6b" href="https://syscotech.club/" target="_blank" className="madeby w-inline-block">
                 <div className="copyright">Made By ❤️ Sys&CoTech</div>
               </a>
             </div>

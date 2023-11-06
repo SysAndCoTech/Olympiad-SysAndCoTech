@@ -127,7 +127,6 @@ body {
     background-color: #18001d;
     font-family: poppins, sans-serif;
     font-size: 18px;
-    line-height: 160%
 }
 h3 {
     text-transform: capitalize;
@@ -230,10 +229,6 @@ li {
 }
 .footer-grid {
     width: 100%;
-    grid-column-gap: 35px;
-    grid-row-gap: 100px;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr 1fr
 }
 
 .footer-col {
@@ -630,6 +625,10 @@ li {
 }
 
 @media screen and (max-width:767px) {
+    .section.footer-section{
+        padding-left: 0;
+        padding-right: 0;
+    }
     .form {
         max-width: 85vw;
         margin-bottom: 0

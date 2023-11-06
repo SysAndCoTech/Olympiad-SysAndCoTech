@@ -77,8 +77,8 @@ useEffect(() => {
         <h1 className='organizerTitle'>Зохион байгуулагч</h1>
         <ul className='organizerList'>
             <li>Sys&Cotech club</li>
-            <li>Nasha tech</li>
-            <li>Call pro</li>
+            <li>DATABANK</li>
+            <li>NASHA TECH</li>
             <Link to="sponser" 
               spy={true} 
               smooth={true} 

@@ -72,7 +72,7 @@
     display: block;
   }
   .nav-links {
-    position: absolute;
+    position: fixed;
     flex-direction: column;
     gap: 14px;
     top: 100px;

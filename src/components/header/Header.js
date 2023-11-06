@@ -30,7 +30,7 @@ function Header() {
        <div className={navbars ? 'header' : 'headerhide'}>
           <a href="/"><img src={logo} width={90} height={90} alt='syscotech'/></a>
         <ul className={`nav-links ${click ? 'active' : ''}`}>
-          <li className="upward">
+          <li className="upward" onClick={handleClose}>
             <Link
               to="about" 
               spy={true} 
@@ -40,7 +40,7 @@ function Header() {
               Олимпиадын тухай
             </Link>
           </li>
-          <li className="upward">
+          <li className="upward" onClick={handleClose}>
             <Link
             to="sponser" 
             spy={true} 
@@ -50,7 +50,7 @@ function Header() {
               Ивээн тэтгэгч
             </Link>
           </li>
-          <li className="upward">
+          <li className="upward" onClick={handleClose}>
             <Link 
             to="reward" 
             spy={true} 
@@ -60,7 +60,7 @@ function Header() {
               Шагнал
             </Link>
           </li>
-          <li className="upward">
+          <li className="upward" onClick={handleClose}>
             <Link 
             to="faq" 
             spy={true} 
@@ -70,7 +70,7 @@ function Header() {
               FAQ
               </Link>
               </li>
-          <li className="upward">
+          <li className="upward" onClick={handleClose}>
             <Link 
             to="form" 
             spy={true} 

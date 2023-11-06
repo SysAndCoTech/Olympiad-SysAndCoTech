@@ -73,6 +73,9 @@
     h5{
         font-size: 16px;
     }
+    .reward-frame{
+        min-width: auto;
+    }
   }
   @media only screen and (max-width: 580px) {
     /* For mobile phones: */

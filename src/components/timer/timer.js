@@ -33,7 +33,7 @@ useEffect(() => {
     <div className='timer-frame'>
       <div className='timer-frame-time'>
         <div className='timer-h1'>
-            <h1 className='timer-h1-span'>"DEV COMP Olympad"</h1>
+            <h1 className='timer-h1-span'>"DEV COMP OLYMPIAD"</h1>
             <h1 className='timer-h1-span'>бүртгэл хаагдахад</h1>            
         </div>
         {finished ? 
@@ -76,9 +76,9 @@ useEffect(() => {
       <div className='organizer'>
         <h1 className='organizerTitle'>Зохион байгуулагч</h1>
         <ul className='organizerList'>
-            <li>Sys&Cotech club</li>
-            <li>DATABANK</li>
-            <li>NASHA TECH</li>
+            <li>Sys&CoTech Club</li>
+            <li>DATABANK LLC</li>
+            <li>NASHA TECH LLC</li>
             <Link to="sponser" 
               spy={true} 
               smooth={true} 

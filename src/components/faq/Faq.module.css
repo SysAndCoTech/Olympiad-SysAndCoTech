@@ -22,7 +22,7 @@
 
 .header h3 {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 26px;
 }
 
 .main {
@@ -37,6 +37,14 @@
   align-items: center;
   justify-content: space-between;
   gap: 40px;
+}
+
+.question{
+  font-size: 28px;
+}
+
+.answer{
+  font-size: 20px;
 }
 
 .box {

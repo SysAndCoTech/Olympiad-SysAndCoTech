@@ -326,9 +326,11 @@ li {
 }
 
 .footer-social-block {
+    flex-direction: column;
     align-items: center;
     padding-left: 20px;
-    display: flex
+    display: flex;
+    gap: 24px;
 }
 
 .footer-social-box {

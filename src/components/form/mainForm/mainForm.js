@@ -3,6 +3,7 @@ import './mainForm.css'
 import {HiMail} from 'react-icons/hi'
 import {db} from '../../../firebase-config';
 import { collection, addDoc } from 'firebase/firestore';
+import {formData} from '../../../data/formData';
 
 const MainFormSecond = () => {
 
@@ -16,6 +17,9 @@ const [studentCode, setStudentCode] = useState("");
 
 const usersCollectionRef = collection(db, "form");
 
+function handleSelect(event){
+  setProfession(event.target.value);
+}
 const handleSubmit = async (e) => {
   e.preventDefault();
       await addDoc(usersCollectionRef,{
@@ -34,7 +38,7 @@ const handleSubmit = async (e) => {
         setCourse("");
         setProfession("");
         setStudentCode("");
-        alert("Success message has been submitted 👍");
+        alert("Амжилттай хадгаллаа 👍");
       })
 }
 
@@ -48,7 +52,7 @@ const handleSubmit = async (e) => {
               <div className='mainForm'>
                 <input className='formDiv' required="required" value={firstName} placeholder='Овог' type="text" onChange={(e)=>setFirstName(e.target.value)} id="fname"/>  
                 <input className='formDiv' required="required" placeholder='Нэр' value={lastName} type="text" onChange={(e)=>setLastName(e.target.value)} id="fname"/>  
-                <input className='formDiv' required="required" placeholder='Gmail' value={gmail} type="gmail" onChange={(e)=>setGmail(e.target.value)} id="fname"/>  
+                <input className='formDiv' required="required" placeholder='Gmail' value={gmail} type="email" onChange={(e)=>setGmail(e.target.value)} id="fname"/>  
                 <input className='formDiv' required="required" placeholder='Курс' value={course} type="number" onChange={(e)=>setCourse(e.target.value)} id="fname"/>  
               </div>
               <div className='mainFormSentButton'>
@@ -60,7 +64,15 @@ const handleSubmit = async (e) => {
               </div>
               <div className='mainForm'>
                 <input className='formDiv' required="required" placeholder='Дугаар' value={number} type="number" onChange={(e)=>setNumber(e.target.value)} id="fname"/>  
-                <input className='formDiv' required="required" placeholder='Анги' value={profession} onChange={(e)=>setProfession(e.target.value)} id="fname"/>  
+                <select className='formDiv' id='fname' onChange={handleSelect}>
+                <option>Please choose one option</option>
+                  {formData.map((data, index)=>{
+                    return(
+                      <option key={index} value={data.text}>{data.text}</option>
+                    )
+                  })}
+                </select>
+                {/* <input className='formDiv' required="required" placeholder='Анги' value={profession} onChange={(e)=>setProfession(e.target.value)} id="fname"/>   */}
                 <input className='formDiv' required="required" placeholder='Оюутаны код' value={studentCode} type="text" onChange={(e)=>setStudentCode(e.target.value)} id="fname"/>  
               </div>
               <div className='litleButtonFrame'>

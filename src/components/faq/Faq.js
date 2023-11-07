@@ -62,8 +62,8 @@ const Faq = () => {
           <div className={styles.bottom}>
             {faqs.map((faq, index) => (
               <div key={index} className={styles.card} style={{ display: hoveredItem === index ? 'block' : 'none' }}>
-                <h3>{faq.question}</h3>
-                {faq.answer}
+                <p className='question'>{faq.question}</p>
+                <p className='answer'>{faq.answer}</p>
               </div>
             ))}
           </div>

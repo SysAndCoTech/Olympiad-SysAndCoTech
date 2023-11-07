@@ -1,19 +1,20 @@
 import React from 'react'
 import "./sponsor.css";
-import fibo from '../../img/fibo.png'
 import nasha from '../../img/NashaTech_Logo-10.png'
-import callpro from '../../img/callPro.png'
+import databackLogo from '../../img/databackLogo.png'
 import sponser from '../../img/sponsers1.png'
+import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
 function Sponsor() {
   return (
     <>
         <div className="contentSection">
-            <img className='contentSection-img' src={sponser} alt=""/>
+            <h2 className='contentSection-h2'>Sponsor</h2>
+            {/* <img className='contentSection-img' src={sponser} alt=""/> */}
             <div className='sponsor-box'>
                 <div className='sponsor-text-box'>
                     <div className='sponsor-text-h1'> DATABANK </div>
-                    <small> PRJ CONCPT </small>
+                    <small> Дэлхийн технологийг дэргэд тань <BsFillArrowRightCircleFill/></small>
                     <p>Дата Бэйнк ХХК нь 2015 онд байгуулагдсан ба төлбөрийн системийн зах зээлд технологийн дэвшил дээр суурилсан ухаалаг шийдэл, үйлчилгээг нэвтрүүлэгч байгууллага юм. 
                     <br/>
                     Дата Бэйнк ХХК нь Монгол банкнаас олгосон төлбөрийн картын “Процессорын үйл ажиллагаа” эрхлэх тусгай зөвшөөрлийн дагуу үйл ажиллагаа явуулдаг ба картын процессингийн системийг бүхэлд нь дотооддоо хөгжүүлэн амжилттай нэвтрүүлсэн.
@@ -21,7 +22,7 @@ function Sponsor() {
                     </p>
                 </div>
                 <div className='sponsor-img'>
-                    <img src={callpro} alt=""/>
+                    <img src={databackLogo} alt=""/>
                 </div>
             </div>
             <div className="mentors1" id='sponser'>
@@ -31,7 +32,7 @@ function Sponsor() {
         </div>
             <div className='sponsor-box'>
                 <div className='sponsor-img'>
-                    <img src={callpro} alt=""/>
+                    <img src={nasha} alt=""/>
                 </div>
                 <div className='sponsor-text-box'>
                     <div className='sponsor-text-h1'> Nasha Tech </div>

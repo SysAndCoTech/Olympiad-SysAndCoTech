@@ -9,8 +9,7 @@
     border-bottom: 2px solid #310050;
 }
 .finished-h1{
-    font-size: 16px;
-    font-size: 44px;
+    font-size: 30px;
     margin: 20px;
 }
 .finished-box{
@@ -74,7 +73,7 @@
     font-size: 1vw;
     font-weight: 600;
     margin-bottom: 5px;
-    color: #310050;
+    color: #D91C5C;
 }
 
 .clock-box{
@@ -90,8 +89,8 @@
     font-size: 4vw;
     background-color: rgb(64, 69, 73);
     border-radius: 5px;
-    padding: 2vw 1vw;
-    color: white;
+    padding: 1vw 1vw;
+    color: #D91C5C;
 }
 .clock-design::before{
     position: absolute;
@@ -117,7 +116,7 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .organizerButton{
@@ -127,7 +126,7 @@
     line-height: 22px;
     text-decoration: none;
     transition: all .5s;
-    font-size: 20px;
+    font-size: 28px;
     display: flex;
     width: auto;
     gap: 12px;
@@ -224,3 +223,8 @@ main{
     margin-top: 20px;
     text-transform: capitalize;
   }
+  @media screen and (max-width: 600px){
+    .organizerList{
+        font-size: 20px;
+    }
+}

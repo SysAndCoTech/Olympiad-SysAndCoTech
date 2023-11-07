@@ -42,7 +42,7 @@
     flex-direction: column;
     grid-gap: 8px;
     gap: 8px;
-    font-size: 20px;
+    font-size: 25px;
 }
 @media screen and (max-width: 1150px){
     .titleback-main {
@@ -54,21 +54,29 @@
         gap: 40px;
     }
     .titleback{
+        margin-top: 100px;
         height: auto;
     }
     .large-h2-span{
         width: 80%;
     }
     .large-h2-span h2{
-        font-size: 2vw;
+        font-size: 24px;
     }
 }
 
 @media screen and (max-width: 600px){
     .large-h2-span h2{
-        font-size: 11px;
+        font-size: 20px;
+    }
+    .organizerButton{
+        font-size: 20px;
+    }
+    .titleback-section{
+        display: flex;
+        justify-content: center;
     }
     .titleback-section img{
-        display: none;
+        width: 90%;
     }
 }

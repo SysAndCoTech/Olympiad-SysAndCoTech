@@ -73,7 +73,7 @@ const handleSubmit = async (e) => {
                   })}
                 </select>
                 {/* <input className='formDiv' required="required" placeholder='Анги' value={profession} onChange={(e)=>setProfession(e.target.value)} id="fname"/>   */}
-                <input className='formDiv' required="required" placeholder='Оюутаны код' value={studentCode} type="text" onChange={(e)=>setStudentCode(e.target.value)} id="fname"/>  
+                <input className='formDiv' required="required" placeholder='Оюутны код' value={studentCode} type="text" onChange={(e)=>setStudentCode(e.target.value)} id="fname"/>  
               </div>
               <div className='litleButtonFrame'>
                 <button className='litleButton' type='submit'>Send</button>

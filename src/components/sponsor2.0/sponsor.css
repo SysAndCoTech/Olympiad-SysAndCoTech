@@ -96,7 +96,7 @@ span {
 .sponsor-text-box p{
     text-align: justify;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
 }
 .mentors1{
     width: 98vw;
@@ -109,19 +109,22 @@ span {
     margin: 50px 0px;
 }
 .sponsor-img img{
-    width: 30vw;
+    width: 24vw;
 }
 .contentSection-img{
     width: 60%;
 }
 @media screen and (max-width: 600px){
     .sponsor-text-box p{
-        font-size: 20px;
+        font-size: 18px;
     }
 }
   @media screen and (max-width: 991px){
     .contentSection h2{
       font-size: 8vw;
+    }
+    .sponsor-img img{
+        width: 46vw;
     }
 }
 @media screen and (max-width: 951px){

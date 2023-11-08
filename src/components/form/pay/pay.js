@@ -30,7 +30,7 @@ function Pay() {
                   <input class='input-field' type="text" disabled="disabled" value='Ц.Төгөлдөр'></input>
                 </td>
                 <td>ГҮЙЛГЭЭНИЙ ДҮН
-                  <input class='input-field' type="text" disabled="disabled" value='5,000₮'></input>
+                  <input class='input-field' type="text" disabled="disabled" value='7,000₮'></input>
                 </td>
               </tr>
             </table>

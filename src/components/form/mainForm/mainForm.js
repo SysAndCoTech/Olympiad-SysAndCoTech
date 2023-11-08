@@ -15,7 +15,7 @@ const [course, setCourse] = useState("");
 const [profession, setProfession] = useState("");
 const [studentCode, setStudentCode] = useState("");
 
-const usersCollectionRef = collection(db, "form");
+const usersCollectionRef = collection(db, "contact");
 
 function handleSelect(event){
   setProfession(event.target.value);
@@ -23,10 +23,10 @@ function handleSelect(event){
 const handleSubmit = async (e) => {
   e.preventDefault();
       await addDoc(usersCollectionRef,{
-        name: firstName,
-        surName: lastName,
+        firstName: firstName,
+        lastName: lastName,
         gmail: gmail,
-        emNumber: number,
+        number: number,
         course: course,
         profession: profession,
         studentCode: studentCode
@@ -63,9 +63,8 @@ const handleSubmit = async (e) => {
                 </div>
               </div>
               <div className='mainForm'>
-                <input className='formDiv' required="required" placeholder='Дугаар' value={number} type="number" onChange={(e)=>setNumber(e.target.value)} id="fname"/>  
+                <input className='formDiv' required="required" placeholder='Утасны дугаар' value={number} type="number" onChange={(e)=>setNumber(e.target.value)} id="fname"/>  
                 <select className='formDiv' id='fname' onChange={handleSelect}>
-                <option>Please choose one option</option>
                   {formData.map((data, index)=>{
                     return(
                       <option key={index} value={data.text}>{data.text}</option>

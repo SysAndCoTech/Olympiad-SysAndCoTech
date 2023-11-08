@@ -16,7 +16,7 @@ import Sponsor from './components/sponsor2.0/sponsor';
 function App() {
   
   const time = new Date();
-  time.setSeconds(time.getSeconds() + 669600);
+  time.setSeconds(time.getSeconds() + 722520);
   
   return (
         <div className='App'>

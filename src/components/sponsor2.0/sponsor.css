@@ -91,7 +91,12 @@ span {
   }
   .sponsor-text-box small{
     font-size: 18.5px;
+  }
+  .sponsor-text-box small a{
     color: pink;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 .sponsor-text-box p{
     text-align: justify;
@@ -114,6 +119,11 @@ span {
 .contentSection-img{
     width: 60%;
 }
+@media screen and (max-width: 340px){
+    .contentSection{
+        width: 87%;
+    }
+}
 @media screen and (max-width: 600px){
     .sponsor-text-box p{
         font-size: 18px;
@@ -121,7 +131,7 @@ span {
 }
   @media screen and (max-width: 991px){
     .contentSection h2{
-      font-size: 8vw;
+      font-size: 15vw;
     }
     .sponsor-img img{
         width: 46vw;
@@ -148,11 +158,8 @@ span {
         font-size: 18vw;
     }
     .sponsor-text-h1 {
-        background: -webkit-linear-gradient(-86deg, #ffffff 5%, #cfcfcf 53%, #363636 91%);
-        -webkit-background-clip: text;
-        -webkit-text-stroke: 5px transparent;
-        color: #18001d;
+        color: white;
         text-transform: uppercase;
-        font-size: 7vw;
+        font-size: 11vw;
     }
 }

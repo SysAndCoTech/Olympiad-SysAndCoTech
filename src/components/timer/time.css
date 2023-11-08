@@ -70,7 +70,7 @@
 }
 
 .timer-span{
-    font-size: 1vw;
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 5px;
     color: #D91C5C;
@@ -85,12 +85,13 @@
 .clock-design{
     position: relative;
     display: flex;
-    flex: 0 1 25%;
-    font-size: 4vw;
+    font-size: 63px;
     background-color: rgb(64, 69, 73);
     border-radius: 5px;
-    padding: 1vw 1vw;
+    padding: 10px 10px;
+    width: 60px;
     color: #D91C5C;
+    justify-content: center;
 }
 .clock-design::before{
     position: absolute;
@@ -162,6 +163,8 @@
     }
     .clock-design{
         padding: 10px 12px;
+        font-size: 5vw;
+        width: 6vw;
     }
     .timer-span {
         font-size: 2vw;
@@ -179,11 +182,22 @@
     .timer-span {
         font-size: 18px;
     }
+    .clock-design{
+        font-size: 34px;
+    width: 40px;
+    }
 }
 
 @media screen and (max-width: 401px){
     .organizerTitle{
         font-size: 26px;
+    }
+    .clock-design{
+        font-size: 20px;
+        width: 28px;    
+    }
+    .timer-span {
+        font-size: 11px;
     }
 }
 
@@ -226,5 +240,10 @@ main{
   @media screen and (max-width: 600px){
     .organizerList{
         font-size: 20px;
+    }
+}
+@media screen and (max-width: 1090px){
+    .organizerList{
+        padding-left: 0px;
     }
 }

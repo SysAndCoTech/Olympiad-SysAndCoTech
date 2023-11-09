@@ -46,7 +46,7 @@ const Faq = () => {
         <div className={styles.main}>
           <div className={styles.top}>
             {faqs.map((faq, index) => (
-              <div 
+              <div key={index}
                 className={styles.box}
                 style={{ 
                   backgroundColor: hoveredItem === index ? '#70FFCB' : '',

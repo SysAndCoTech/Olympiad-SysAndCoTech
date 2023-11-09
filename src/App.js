@@ -8,15 +8,12 @@ import Timer from './components/timer/timer';
 import Footer from './components/footer/footer';
 import Reward from './components/reward/reward';
 import Faq from './components/faq/Faq';
-// import Solar from './components/mentor/solar/solar';
-import Mentors from './components/mentor/mentors';
-import { Route, Routes } from 'react-router';
 import Sponsor from './components/sponsor2.0/sponsor';
 
 function App() {
   
   const time = new Date();
-  time.setSeconds(time.getSeconds() + 558600);
+  time.setSeconds(time.getSeconds() + 504000);
   
   return (
         <div className='App'>

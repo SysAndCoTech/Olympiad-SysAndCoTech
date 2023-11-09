@@ -2,7 +2,6 @@ import React from 'react'
 import "./sponsor.css";
 import nasha from '../../img/NashaTech_Logo-10.png'
 import databackLogo from '../../img/databackLogo.png'
-import sponser from '../../img/sponsers1.png'
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
 function Sponsor() {
@@ -13,7 +12,7 @@ function Sponsor() {
             <div className='sponsor-box'>
                 <div className='sponsor-text-box'>
                     <div className='sponsor-text-h1'> DATABANK </div>
-                    <small> <a href="https://databank.mn" target="_blank"> Дэлхийн технологийг дэргэд тань <BsFillArrowRightCircleFill/></a></small>
+                    <small> <a href="https://databank.mn" target="_blank" rel="noopener noreferrer"> Дэлхийн технологийг дэргэд тань <BsFillArrowRightCircleFill/></a></small>
                     <p>Дата Бэйнк ХХК нь 2015 онд байгуулагдсан ба төлбөрийн системийн зах зээлд технологийн дэвшил дээр суурилсан ухаалаг шийдэл, үйлчилгээг нэвтрүүлэгч байгууллага юм. 
                     <br/>
                     Дата Бэйнк ХХК нь Монгол банкнаас олгосон төлбөрийн картын “Процессорын үйл ажиллагаа” эрхлэх тусгай зөвшөөрлийн дагуу үйл ажиллагаа явуулдаг ба картын процессингийн системийг бүхэлд нь дотооддоо хөгжүүлэн амжилттай нэвтрүүлсэн.
@@ -30,7 +29,7 @@ function Sponsor() {
                 </div>
                 <div className='sponsor-text-box'>
                     <div className='sponsor-text-h1'> Nasha Tech </div>
-                    <small>  <a href="https://nashatech.com" target="_blank">THE NEXT LEVEL <BsFillArrowRightCircleFill/></a></small>
+                    <small>  <a href="https://nashatech.com" target="_blank" rel="noopener noreferrer">THE NEXT LEVEL <BsFillArrowRightCircleFill/></a></small>
                     <p>
                         Бид үйлчлүүлэгчдэд үнэ цэнийг бий болгодог, эрч хүчтэй, шинэлэг, тогтсон компани юм.
                         <br/>

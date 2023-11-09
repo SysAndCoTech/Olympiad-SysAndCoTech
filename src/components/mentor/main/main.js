@@ -6,17 +6,17 @@ import Slider from "../slider/slider";
 function Main(props) {
   return (
     <div className="sponser">
-      <div class="main-main">
-        <div class="leftSide">
+      <div className="main-main">
+        <div className="leftSide">
           <img src={props.img} alt="company logo" />
         </div>
-        <div class="rightSide">
-          <div class="description1">{props.description1}</div>
-          <div class="description2">{props.description2}</div>
-          <div class="description3">{props.description3}</div>
+        <div className="rightSide">
+          <div className="description1">{props.description1}</div>
+          <div className="description2">{props.description2}</div>
+          <div className="description3">{props.description3}</div>
         </div>
       </div>
-      <div class="main-footer">
+      <div className="main-footer">
           <Slider />
         </div>
     </div>

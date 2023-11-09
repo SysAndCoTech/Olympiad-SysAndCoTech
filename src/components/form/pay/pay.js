@@ -14,28 +14,28 @@ function Pay() {
         </div>
         
         <div className='creditTools'>
-        <img src='https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png' alt='visa card' height='80' class='credit-card-image' id='credit-card-image'/>
+        <img src='https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png' alt='visa card' height='80' className='credit-card-image' id='credit-card-image'/>
         <form action="">
           БАНК
-            <input class='input-field' type="text" disabled="disabled" value='ГОЛОМТ БАНК'></input>
+            <input className='input-field' type="text" disabled="disabled" value='ГОЛОМТ БАНК'></input>
             ДАНСНЫ ДУГААР
-            <input class='input-field' type="text" disabled="disabled" value='2205230332'></input>
+            <input className='input-field' type="text" disabled="disabled" value='2205230332'></input>
             <td className='input-field2'>
               ДАНСНЫ НЭР
-              <input class='input-field1' type="text" disabled="disabled" value='Ц.Төгөлдөр'></input>
+              <input className='input-field1' type="text" disabled="disabled" value='Ц.Төгөлдөр'></input>
             </td>
-            <table class='half-input-table'>
+            <table className='half-input-table'>
               <tr>
                 <td>ДАНСНЫ НЭР
-                  <input class='input-field' type="text" disabled="disabled" value='Ц.Төгөлдөр'></input>
+                  <input className='input-field' type="text" disabled="disabled" value='Ц.Төгөлдөр'></input>
                 </td>
                 <td>ГҮЙЛГЭЭНИЙ ДҮН
-                  <input class='input-field' type="text" disabled="disabled" value='7,000₮'></input>
+                  <input className='input-field' type="text" disabled="disabled" value='7,000₮'></input>
                 </td>
               </tr>
             </table>
             ГҮЙЛГЭЭНИЙ УТГА
-            <input class='input-field' type="text" disabled="disabled" value='Овог Нэр, Утасны дугаар'></input>
+            <input className='input-field' type="text" disabled="disabled" value='Овог Нэр, Утасны дугаар'></input>
             </form>
         </div>
       </div>

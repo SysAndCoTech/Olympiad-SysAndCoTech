@@ -12,7 +12,7 @@ const [lastName, setLastName] = useState("");
 const [gmail, setGmail] = useState("");
 const [number, setNumber] = useState("");
 const [course, setCourse] = useState("");
-const [profession, setProfession] = useState("");
+const [profession, setProfession] = useState("Программ хангамж");
 const [studentCode, setStudentCode] = useState("");
 
 const usersCollectionRef = collection(db, "contact");
@@ -21,6 +21,7 @@ function handleSelect(event){
   setProfession(event.target.value);
 }
 const handleSubmit = async (e) => {
+  console.log(profession);
   e.preventDefault();
       await addDoc(usersCollectionRef,{
         firstName: firstName,

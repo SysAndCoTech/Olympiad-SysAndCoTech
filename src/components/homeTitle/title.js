@@ -1,7 +1,6 @@
 import React from 'react'
 import './title.css'
 import Dev from'../../img/Dev comp logo.png'
-import Power from '../../img/POWERED BY.png'
 
 function Title() {
   

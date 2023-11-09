@@ -16,27 +16,22 @@ import Sponsor from './components/sponsor2.0/sponsor';
 function App() {
   
   const time = new Date();
-  time.setSeconds(time.getSeconds() + 722520);
+  time.setSeconds(time.getSeconds() + 558600);
   
   return (
         <div className='App'>
-          <Routes>
-              <Route exact path="/" element={
-                <>
-                  <Header/>
-                  <Title />
-                  <Timer expiryTimestamp={time}/>
-                  <Reward/>
-                  {/* <Solar/> */}
-                  <Sponsor/>
-                  <MainForm/>
-                  <Pay/>
-                  <Faq/>
-                  <Footer/>
-                </>
-              }/>
-              <Route path="sponser" element={<Mentors />} />
-          </Routes>
+          <>
+            <Header/>
+            <Title />
+            <Timer expiryTimestamp={time}/>
+            <Reward/>
+            {/* <Solar/> */}
+            <Sponsor/>
+            <MainForm/>
+            <Pay/>
+            <Faq/>
+            <Footer/>
+          </>
         </div>
   
   );

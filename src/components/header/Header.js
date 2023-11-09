@@ -31,55 +31,65 @@ function Header() {
           <a href="/"><img src={logo} width={90} height={90} alt='syscotech'/></a>
         <ul className={`nav-links ${click ? 'active' : ''}`}>
           <li className="upward" onClick={handleClose}>
-            <Link
-              to="about" 
+            <button className='header-button'>
+              <Link
+                to="about" 
+                // spy={true} 
+                smooth={true} 
+                offset={-100} 
+                duration={500} >
+                Олимпиадын тухай
+              </Link>
+            </button>
+          </li>
+          <li className="upward" onClick={handleClose}>
+            <button className='header-button'>
+              <Link 
+              to="reward" 
               spy={true} 
               smooth={true} 
-              offset={50} 
+              offset={-100} 
               duration={500} >
-              Олимпиадын тухай
-            </Link>
-          </li>
-          <li className="upward" onClick={handleClose}>
-            <Link
-            to="sponser" 
-            spy={true} 
-            smooth={true} 
-            offset={50} 
-            duration={500} >
-              Ивээн тэтгэгч
-            </Link>
-          </li>
-          <li className="upward" onClick={handleClose}>
-            <Link 
-            to="reward" 
-            spy={true} 
-            smooth={true} 
-            offset={50} 
-            duration={500} >
-              Шагнал
-            </Link>
-          </li>
-          <li className="upward" onClick={handleClose}>
-            <Link 
-            to="faq" 
-            spy={true} 
-            smooth={true} 
-            offset={50} 
-            duration={500} >
-              FAQ
+                Шагнал
               </Link>
-              </li>
-          <li className="upward" onClick={handleClose}>
-            <Link 
-            to="form" 
-            spy={true} 
-            smooth={true} 
-            offset={50} 
-            duration={500} >
-              Бүртгүүлэх
-            </Link>
+            </button>
           </li>
+          <li className="upward" onClick={handleClose}>
+            <button className='header-button'>
+              <Link
+              to="sponser" 
+              spy={true} 
+              smooth={true} 
+              offset={-100} 
+              duration={500} >
+                Ивээн тэтгэгч
+              </Link>
+            </button>
+          </li>
+          <li className="upward" onClick={handleClose}>
+            <button className='header-button'>
+              <Link 
+              to="form" 
+              spy={true} 
+              smooth={true} 
+              offset={-100} 
+              duration={500} >
+                Бүртгүүлэх
+              </Link>
+            </button>
+          </li>
+          <li className="upward" onClick={handleClose}>
+            <button className='header-button'>
+              <Link 
+              to="faq" 
+              spy={true} 
+              smooth={true} 
+              offset={-100} 
+              duration={500} >
+                FAQ
+              </Link>
+            </button>
+            </li>
         </ul>
         <div className='hamburger' onClick={handleClick}>
           {click ? <CloseOutlined className='icon' /> : <MenuOutlined className='icon' /> }

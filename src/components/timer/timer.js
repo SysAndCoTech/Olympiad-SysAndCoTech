@@ -78,15 +78,6 @@ useEffect(() => {
             <li>Sys&CoTech Club</li>
             <li>DATABANK LLC</li>
             <li>NASHA TECH LLC</li>
-            <Link to="sponser" 
-              spy={true} 
-              smooth={true} 
-              offset={50} 
-              duration={500} 
-              className='organizerButton'>
-              Мэдээлэл авах
-              <BsFillArrowRightCircleFill/>
-            </Link>
         </ul>
       </div>
     </div>

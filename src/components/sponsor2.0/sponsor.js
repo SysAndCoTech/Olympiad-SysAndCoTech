@@ -8,9 +8,8 @@ import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 function Sponsor() {
   return (
     <>
-        <div className="contentSection">
+        <div className="contentSection" id='sponser'>
             <h2 className='contentSection-h2'>Sponsor</h2>
-            {/* <img className='contentSection-img' src={sponser} alt=""/> */}
             <div className='sponsor-box'>
                 <div className='sponsor-text-box'>
                     <div className='sponsor-text-h1'> DATABANK </div>
@@ -25,18 +24,13 @@ function Sponsor() {
                     <img src={databackLogo} alt=""/>
                 </div>
             </div>
-            <div className="mentors1" id='sponser'>
-            <h5 class="text-slider">
-                <span>- NASHATECH - DATABANK - NASHATECH - DATABANK - NASHATECH - DATABANK - NASHATECH - DATABANK - NASHATECH - DATABANK - NASHATECH - DATABANK - NASHATECH - DATABANK - NASHATECH - DATABANK -</span>
-            </h5>
-        </div>
             <div className='sponsor-box'>
                 <div className='sponsor-img'>
                     <img src={nasha} alt=""/>
                 </div>
                 <div className='sponsor-text-box'>
                     <div className='sponsor-text-h1'> Nasha Tech </div>
-                    <small>  <a href="https://databank.mn" target="_blank">THE NEXT LEVEL <BsFillArrowRightCircleFill/></a></small>
+                    <small>  <a href="https://nashatech.com" target="_blank">THE NEXT LEVEL <BsFillArrowRightCircleFill/></a></small>
                     <p>
                         Бид үйлчлүүлэгчдэд үнэ цэнийг бий болгодог, эрч хүчтэй, шинэлэг, тогтсон компани юм.
                         <br/>
@@ -46,11 +40,6 @@ function Sponsor() {
                     </p>
                 </div>
             </div>
-        </div>
-        <div className="mentors" id='sponser'>
-            <h5 class="text-slider">
-                <span>- NASHATECH - DATABANK - NASHATECH - DATABANK - NASHATECH - DATABANK - NASHATECH - DATABANK - NASHATECH - DATABANK - NASHATECH - DATABANK - NASHATECH - DATABANK - NASHATECH - DATABANK -</span>
-            </h5>
         </div>
     </>
     )

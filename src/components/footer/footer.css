@@ -756,6 +756,8 @@ li {
         margin-top: 15px
     }
     .footer-social-block {
+        grid-gap: 0px;
+    gap: 0px;
         flex-direction: column
     }
     .footer-social-box {
@@ -788,7 +790,7 @@ li {
     }
     .footer-left-col-content-box {
         border-width: 0;
-        padding: 30px 25px
+        padding: 30px 0px
     }
     .footer-navigation-box {
         border-bottom-width: 0;
@@ -811,4 +813,9 @@ li {
     }
 
 
+}
+@media screen and (max-width:320px) {
+    .phone-link{
+        font-size: 6vw;
+    }
 }

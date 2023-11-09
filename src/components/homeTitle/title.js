@@ -18,9 +18,6 @@ function Title() {
                 </h2>
               </div>
           </div>
-          <div className='titleback-section'>
-            <img src={Power}/>
-          </div>
         </div>
       </div>
     </div>

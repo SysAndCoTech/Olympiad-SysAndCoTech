@@ -10,7 +10,7 @@ function Timer() {
   });
   const [finished, setFinished] = useState(false);
 
-  const downTime = new Date("11/11/2023, 07:17:00 PM").getTime();
+  const downTime = new Date("11/17/2023, 12:30:00 PM").getTime();
 
   useEffect(() => {
     const interval = setInterval(() => {

@@ -21,7 +21,6 @@ function handleSelect(event){
   setProfession(event.target.value);
 }
 const handleSubmit = async (e) => {
-  console.log(profession);
   e.preventDefault();
       await addDoc(usersCollectionRef,{
         firstName: firstName,
@@ -39,7 +38,7 @@ const handleSubmit = async (e) => {
         setCourse("");
         setProfession("");
         setStudentCode("");
-        alert("Амжилттай хадгаллаа 👍");
+        alert("Амжилттай бүртгэгдлээ 👍");
       })
 }
 

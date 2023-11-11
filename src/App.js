@@ -12,15 +12,12 @@ import Sponsor from './components/sponsor2.0/sponsor';
 
 function App() {
   
-  const time = new Date();
-  time.setSeconds(time.getSeconds() + 504000);
-  
   return (
         <div className='App'>
           <>
             <Header/>
             <Title />
-            <Timer expiryTimestamp={time}/>
+            <Timer/>
             <Reward/>
             {/* <Solar/> */}
             <Sponsor/>

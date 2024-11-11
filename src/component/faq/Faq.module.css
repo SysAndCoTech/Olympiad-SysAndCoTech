@@ -13,32 +13,20 @@
   color: #023047;
 }
 
-
-
-
 .header h1 {
   font-size: 32px;
   font-weight: bold;
 }
 
-
-
-
 .header h3 {
   font-size: 24px;
-  color: #8A0018;
+  color: #8a0018;
 }
-
-
-
 
 .main {
   display: flex;
   flex-direction: column;
 }
-
-
-
 
 .faqItem {
   margin-bottom: 20px;
@@ -49,15 +37,9 @@
   cursor: pointer;
 }
 
-
-
-
 .faqItem:hover {
   transform: scale(1.02);
 }
-
-
-
 
 .faqQuestion {
   padding: 20px;
@@ -68,19 +50,13 @@
   justify-content: space-between;
 }
 
-
-
-
 .faqAnswer {
   padding: 15px 20px;
   font-size: 16px;
   color: #023047;
 }
 
-
-
-
 .faqToggle {
   font-size: 24px;
-  color: #8A0018;
+  color: #8a0018;
 }

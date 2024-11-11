@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+body {
+  margin: 0;
+  padding-top: 170px;
+}
+
+#header {
+  z-index: 1000;
+  height: 170px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  transition: height 0.3s, background-color 0.3s, color 0.3s;
+  padding: 0 100px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  /* background-color: transparent; */
+  /* color: black; */
+}
+
+#header.shrink {
+  height: 100px;
+  background: linear-gradient(135deg, #2e4057 0%, #4a6fa5 100%);
+  color: white;
+  align-items: center;
+  box-shadow: 0 10px 6px rgba(0, 0, 0, 0.1);
+}
+#header .nav-links li a {
+  cursor: pointer;
+}
+
+#header.shrink .nav-links li a {
+  color: #f1f6f9;
+}
+#header.shrink .nav-links li a:hover {
+  color: #fb8500;
+}
+.nav-links {
+  width: auto;
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+}
+
+.nav-links li {
+  list-style: none;
+  margin: 0 12px;
+  position: relative;
+  padding: 6px 0;
+  background-size: 0% 10px;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s ease-in-out;
+}
+
+.nav-links .list1:hover {
+  background-image: url("../../assets/pattern.png");
+  background-size: 100% 10px;
+}
+.nav-links .list2:hover {
+  background-image: url("../../assets/pattern2.png");
+  background-size: 100% 10px;
+}
+.nav-links .list3:hover {
+  background-image: url("../../assets/pattern3.png");
+  background-size: 100% 10px;
+}
+.nav-links .list4:hover {
+  background-image: url("../../assets/pattern4.png");
+  background-size: 100% 10px;
+}
+.nav-links .list5:hover {
+  background-image: url("../../assets/pattern5.png");
+  background-size: 100% 10px;
+}
+
+.nav-links li a {
+  position: relative;
+  color: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.4s ease;
+  font-family: "Rubik", sans-serif;
+}
+
+.nav-links li a:hover {
+  color: #fb8500;
+}
+
+.header-button {
+  width: auto;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+.icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: inherit;
+}
+
+@media screen and (max-width: 1600px) {
+  #header {
+    height: 100px;
+    background: #2e4057;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  #header .nav-links li a {
+    color: #f1f6f9;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .hamburger {
+    display: block;
+  }
+
+  #header {
+    height: 100px;
+    background: linear-gradient(135deg, #2e4057 0%, #4a6fa5 100%);
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links {
+    position: fixed;
+    flex-direction: column;
+    gap: 14px;
+    top: 90px;
+    right: -100%;
+    height: 100vh;
+    width: 100%;
+    background: #1f2633;
+    transition: 0.4s ease-in-out;
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    right: 0;
+    background: linear-gradient(135deg, #2e4057 0%, #4a6fa5 100%);
+  }
+
+  .nav-links li {
+    margin-top: 2rem;
+  }
+
+  .nav-links li a {
+    color: #f1f6f9;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .nav-links li a {
+    font-size: 1.4rem;
+  }
+}

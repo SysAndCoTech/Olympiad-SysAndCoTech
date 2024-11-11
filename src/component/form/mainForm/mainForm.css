@@ -1,0 +1,311 @@
+.mainformsecond {
+  width: 100%;
+  height: 100vh;
+  /* background-color: #352f44; */
+  background-color: #000;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#fname {
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+#label {
+  display: flex;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: justify;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 80px;
+}
+.contentFrame {
+  margin-bottom: 80px;
+  height: 100vh;
+  /* background-image: url("../../../assets/backTool1.png"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* border-top: 2px solid #000;
+  border-bottom: 2px solid #000; */
+  /* border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+
+  border-image: url("../../../assets/line_hee.png") 30 repeat; */
+}
+.contentSection {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formDiv {
+  min-height: 52px;
+  color: #000;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: rgba(113, 20, 21, 0);
+  background-image: url(https://uploads-ssl.webflow.com/62fac9a…/630092c…_bxs_user.svg);
+  background-position: 96%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  border: 1px solid #711415;
+  margin-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.2s;
+  box-shadow: 0 0 6px -1px #18001d;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  font-family: "Rubik", "monospace";
+}
+.formDiv:focus,
+.formDiv:focus {
+  border-color: #3898ec;
+  outline: 0;
+}
+.formDiv:hover {
+  border-color: #4c0e0f;
+  box-shadow: 0 0 3px 2px rgba(113, 20, 21, 0.39);
+}
+.mainForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.mainFormSentButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 270px;
+  border-radius: 0; /* Remove the circle by setting it to 0 */
+  border: none;
+  background: none; /* Remove existing background */
+  box-shadow: none;
+}
+.sentButton {
+  width: 100%;
+  height: 100%;
+  background: url("../../../assets/send.png") no-repeat center center; /* Add your PNG as the background */
+  background-size: contain;
+  border-radius: 0; /* Remove the circle shape */
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+.infoSection {
+  margin-top: 100px;
+  width: 100%;
+  max-height: 290px;
+  min-height: 260px;
+  /* -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px); */
+
+  /* background-color: rgba(49, 0, 80, 0.3); */
+
+  /* border: 1px solid #310050; */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+}
+.contentSection h1 {
+  background: #89181b;
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 2px transparent;
+  color: transparent;
+  text-transform: uppercase;
+  margin-top: -10px;
+  padding-top: 10px;
+  padding-left: 0;
+  padding-right: 5px;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 90%;
+  transition: background-position 0.5s ease;
+  position: relative;
+  top: 16px;
+  z-index: 1;
+  margin: 110px 0px 0px 0px;
+  text-align: center;
+}
+.contentSection h1:hover {
+  background-image: linear-gradient(to right, #4b344d 0%, #89181b 100%);
+  background-color: transparent;
+}
+.btn {
+  cursor: pointer;
+  color: red;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn:visited {
+  transform: scale(1.2);
+}
+.sentButton:hover,
+.sentButton:focus,
+.sentButton:visited {
+  transform: scale(1.1);
+}
+.redSymbol {
+  color: #ff0000;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.sentButton:active {
+  transform: scale(0.95);
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+  background-color: #d3d2d2;
+}
+.litleButtonFrame {
+  width: 150px;
+  height: 65px;
+  max-width: 100%;
+  border-radius: 0;
+  flex-direction: column;
+  margin-top: 0;
+  margin-bottom: 5px;
+  padding: 5px;
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  box-shadow: inset 0 0 0 1px #711415;
+}
+.litleButton {
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  padding: 0;
+  background-color: #711415;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.375s;
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  color: wheat;
+}
+.litleButton:hover {
+  background-color: #d91c5c;
+  box-shadow: inset 0 0 0 1px #a922ff;
+}
+@media screen and (min-width: 992px) {
+  .litleButtonFrame {
+    display: none;
+  }
+  .contentFrame {
+    height: auto;
+  }
+}
+@media screen and (max-width: 991px) {
+  .contentSection h1 {
+    font-size: 8vw;
+  }
+  .form {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .mainForm {
+    width: 100%;
+  }
+  .formDiv {
+    width: 100%;
+  }
+  .infoSection {
+    height: auto;
+    max-height: none;
+    min-height: none;
+  }
+  .mainFormSentButton {
+    display: none;
+  }
+  #fname {
+    border-radius: 0px;
+  }
+}
+@media screen and (max-width: 1660px) {
+  .contentFrame {
+    height: auto;
+  }
+}
+
+@keyframes gelatine {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}

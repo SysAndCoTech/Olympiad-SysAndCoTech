@@ -1,0 +1,151 @@
+.reward {
+  height: 750px;
+  display: flex;
+  padding-top: 90px;
+  justify-content: space-evenly;
+  color: #3c3c3c;
+  /* background-color: #f0f0f0; */
+  background-color: rgba(215, 215, 215, 0.3);
+  /* border-bottom: 2px solid #310050; */
+}
+
+.reward-frame {
+  min-width: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reward_h {
+  background: #89181b;
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 2px transparent;
+  color: transparent;
+  text-transform: uppercase;
+  margin-top: -10px;
+  padding-top: 10px;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 90%;
+  transition: background-position 0.5s ease;
+}
+
+.reward_h:hover {
+  background-image: linear-gradient(to right, #4b344d 0%, #89181b 100%);
+  background-color: transparent;
+}
+h5 {
+  text-align: center;
+}
+
+.reward-text {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin: 20px 100px;
+
+  border-bottom: 15px solid transparent;
+
+  border-image: url("../../assets/line_hee.png") 30 repeat;
+  color: #000000;
+  transition: color 0.5s ease, border-color 0.5s ease;
+}
+
+.reward-text:hover {
+  border-color: transparent;
+}
+
+.reward-text:hover .reward-text-bg {
+  color: #ffffff;
+  background: linear-gradient(135deg, #ff4e50, #4a90e2);
+  transition: background 0.5s ease;
+  cursor: pointer;
+}
+
+.reward-text:hover .reward-text-st,
+.reward-text:hover h5 {
+  color: #4a90e2;
+  transition: color 0.5s ease;
+}
+
+.reward-text-st {
+  text-transform: uppercase;
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  padding-bottom: 20px;
+  transition: color 0.5s ease;
+}
+
+.reward-text2 {
+  display: flex;
+  justify-content: space-between;
+  /* border-bottom: 1px solid transparent; */
+  font-size: 20px;
+}
+
+.reward-text-bg {
+  display: flex;
+  padding: 10px;
+  font-size: 30px;
+  justify-content: center;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #4a90e2;
+  color: #3c3c3c;
+  background-color: rgba(255, 255, 255, 0.95);
+  transition: all 0.5s ease;
+}
+
+.reward-text-bg:hover {
+  color: #ffffff;
+  background: linear-gradient(135deg, #ff4e50, #4a90e2);
+  border-color: #4a90e2;
+}
+
+@media only screen and (max-width: 780px) {
+  .reward-text2 {
+    display: grid;
+    justify-content: center;
+  }
+  .reward {
+    height: 900px;
+  }
+  .reward_h {
+    font-size: 30px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  .reward-frame {
+    min-width: auto;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .reward-text2 {
+    display: grid;
+    justify-content: center;
+  }
+  .reward {
+    height: 900px;
+  }
+  .reward_h {
+    font-size: 24px;
+  }
+  .reward-text-st {
+    font-size: 22px;
+  }
+  .reward-text-bg {
+    font-size: 22px;
+    padding: 5px 10px;
+  }
+  h5 {
+    font-size: 12px;
+  }
+  .reward-text {
+    margin: 20px 50px;
+  }
+}

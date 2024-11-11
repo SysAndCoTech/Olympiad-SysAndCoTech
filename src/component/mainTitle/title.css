@@ -1,0 +1,166 @@
+.titleback {
+  position: relative;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+
+.cloud-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.cloud {
+  position: absolute;
+  width: 300px;
+  opacity: 0.8;
+}
+
+.cloud-1 {
+  top: 20px;
+  left: -150px;
+  animation: moveClouds 25s linear infinite;
+}
+
+.cloud-2 {
+  top: 80px;
+  left: -250px;
+  animation: moveClouds 35s linear infinite;
+}
+
+.cloud-3 {
+  top: 150px;
+  left: -200px;
+  animation: ReversemoveClouds 45s linear infinite;
+}
+
+@keyframes ReversemoveClouds {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-10);
+  }
+}
+
+@keyframes moveClouds {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(110vw);
+  }
+}
+
+.bottom-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: 50px;
+  height: 100%;
+}
+
+.text-left {
+  flex: 1;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 600;
+  color: #023047;
+  padding-top: 0px;
+  align-self: flex-start;
+}
+.text-right {
+  flex: 1;
+  padding: 0 20px;
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #023047;
+  padding-top: 300px;
+  align-self: flex-start;
+  order: 1;
+  line-height: 1.5em;
+}
+
+.vertical-image {
+  height: 90%;
+  padding-top: 50px;
+  margin-left: 10%;
+}
+@media (max-width: 1080px) {
+  .vertical-image {
+    height: 60%;
+    padding-top: 10px;
+    order: -1;
+  }
+} /* Responsive styles */
+@media (max-width: 768px) {
+  .bottom-container {
+    flex-direction: column;
+  }
+
+  .text-left,
+  .text-right {
+    font-size: 1em;
+    padding-top: 20px;
+    padding-bottom: -100px;
+  }
+  .text-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .text-right {
+    padding-top: -200px;
+  }
+  .vertical-image {
+    height: 70%;
+    padding-top: 10px;
+    order: -1;
+  }
+
+  .cloud {
+    width: 150px;
+  }
+
+  .cloud-1 {
+    top: 10px;
+    left: -75px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bottom-container {
+    flex-direction: column;
+  }
+
+  .text-left,
+  .text-right {
+    font-size: 0.8em;
+    padding-top: 20px;
+    height: 20px;
+    width: auto;
+    height: 70px;
+    flex-grow: 0;
+  }
+
+  .vertical-image {
+    height: 50%;
+    padding-top: 5px;
+    order: -1;
+  }
+}

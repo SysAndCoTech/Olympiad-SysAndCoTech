@@ -1,0 +1,261 @@
+.timer-frame {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* border-bottom: 2px solid #310050; */
+  padding: 20px;
+  flex-direction: column;
+}
+
+.finished-h1 {
+  font-size: 30px;
+  margin: 20px;
+  text-align: center;
+}
+
+.finished-box {
+  width: auto;
+  height: auto;
+  background-color: rgb(64, 69, 73);
+  border-radius: 20px;
+}
+
+.timer-frame-time {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.timer-h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.timer-h1-span {
+  background: #89181b;
+  background-size: 200%;
+  background-position: 0% 50%;
+  background-clip: text;
+  -webkit-text-stroke: 2px transparent;
+  color: transparent;
+  text-transform: uppercase;
+  margin-top: -10px;
+  padding-top: 10px;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 90%;
+  transition: background-position 0.5s ease;
+}
+
+.timer-h1-span:hover {
+  background-image: linear-gradient(to right, #4b344d 0%, #89181b 100%);
+  background-color: transparent;
+}
+
+.time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.timer-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 5px;
+  gap: 10px;
+}
+
+.timer-span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000000;
+}
+
+.clock-box {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  gap: 2px;
+  position: relative;
+  justify-content: center;
+}
+
+.clock-design {
+  font-family: "Noto Sans Mongolian", sans-serif;
+  position: relative;
+  display: flex;
+  font-size: 3rem;
+  background-color: rgba(200, 200, 200, 0.5);
+  border-radius: 6px;
+  padding: 10px 10px;
+  width: 50px;
+  color: #000000;
+  justify-content: center;
+}
+
+.clock-design::before {
+  position: absolute;
+  inset: 50% 0px;
+  content: "";
+  height: 2px;
+  opacity: 0.4;
+}
+
+.mongolian-numeral {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+}
+
+.timer-box:hover .normal-number {
+  visibility: hidden;
+}
+
+.timer-box:hover .mongolian-numeral {
+  visibility: visible;
+  font-size: 3rem;
+  color: #000000;
+}
+
+.mongolian-numeral {
+  display: none;
+}
+
+.timer-box:hover .mongolian-numeral {
+  display: block;
+  font-size: 3rem;
+  color: #000000;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(-90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+.flip {
+  animation: flip 0.5s ease;
+}
+
+.organizer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.organizerTitle {
+  font-size: 1.5rem;
+  color: #000000;
+  margin-bottom: 10px;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.organizerTitle:hover {
+  color: #4a90e2;
+}
+
+.organizerList {
+  list-style: none;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.organizerList li {
+  color: #000000;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.organizerList li:hover {
+  color: #4a90e2;
+}
+.active {
+  background-color: rgba(74, 144, 226, 0.2);
+  color: #4a90e2;
+  transition: background-color 0.3s ease;
+}
+.timer-h1-span.active,
+.organizerTitle.active,
+.organizerList li.active {
+  color: #4a90e2;
+  background-position: 100% 50%;
+}
+
+@media (max-width: 768px) {
+  .timer-frame-time {
+    gap: 20px;
+  }
+
+  .timer-h1-span {
+    font-size: 2rem;
+  }
+
+  .clock-design {
+    font-size: 2.5rem;
+    width: 45px;
+    padding: 8px;
+  }
+
+  .timer-span {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .timer-frame {
+    height: auto;
+    padding: 10px;
+  }
+
+  .timer-frame-time {
+    gap: 15px;
+  }
+
+  .timer-h1-span {
+    font-size: 1.5rem;
+  }
+
+  .clock-design {
+    font-size: 2rem;
+    width: 40px;
+    padding: 6px;
+  }
+
+  .timer-span {
+    font-size: 1rem;
+  }
+
+  .organizerTitle {
+    font-size: 1.25rem;
+  }
+
+  .organizerList {
+    font-size: 0.875rem;
+  }
+}

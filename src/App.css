@@ -1,32 +1,65 @@
-.App {
-  height: 100%;
-  background-color: #18001D;
-  
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mongolian&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+body {
+  background: #fff;
+  background-image: url("./assets/bg.png") !important;
+  background-size: contain;
+  font-family: "Noto Sans Mongolian", sans-serif;
+  height: 100dvh;
 }
-a{
+
+.App {
+  height: auto;
+}
+
+a {
   text-decoration: none;
 }
-button{
+
+button {
   width: auto;
   height: 50px;
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-*{
+
+.background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/uul_background.png");
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+  z-index: -100;
+}
+
+header,
+title,
+timer {
+  position: relative;
+  z-index: 1;
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 .Loading {
   height: 100%;
   width: 100%;
-  background-color: #18001D;
+  background-color: #ffe7ab;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   top: 0;
 }
-.follow{
+
+.follow {
   position: absolute;
   background-color: #f48049;
   height: 2px;
@@ -34,6 +67,7 @@ button{
   left: 0;
   z-index: 2;
 }
+
 .progress-bar {
   position: absolute;
   left: 0;
@@ -42,6 +76,7 @@ button{
   width: 0;
   transition: 0.4s ease-out;
 }
+
 #count {
   position: absolute;
   font-size: 130px;
@@ -49,6 +84,7 @@ button{
   transform: translateY(-15px);
   font-weight: 500;
 }
+
 .content {
   width: 100vw;
   height: auto;
@@ -58,15 +94,16 @@ button{
   flex-direction: column;
   color: #fff;
 }
-.content  p{
-  text-align: center;
-    font-size: 104px;
-    opacity: 0;
-    display: none;
-    font-weight: 500;
-    margin: 0;
 
+.content p {
+  text-align: center;
+  font-size: 104px;
+  opacity: 0;
+  display: none;
+  font-weight: 500;
+  margin: 0;
 }
+
 section {
   position: relative;
   display: flex;
@@ -74,17 +111,30 @@ section {
 }
 
 @keyframes animate {
-
-  0%{
+  0% {
     transform: translateY(0) rotate(0deg);
     opacity: 1;
     border-radius: 0;
   }
 
-  100%{
+  100% {
     transform: translateY(-1000px) rotate(720deg);
     opacity: 0;
     border-radius: 50%;
   }
+}
+@media (max-width: 768px) {
+  body {
+    background-size: contain;
+  }
 
+  .background-img {
+    top: 10%;
+    background-size: contain;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    background-image: url("./assets/bg.png");
+  }
 }
